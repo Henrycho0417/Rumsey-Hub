@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Quicksand' , sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+body {
+   height:100vh;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(0,0,0);
+}
+
+.TitleSection {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.Main {
+    font-size:3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sign {
+    margin-top:10px;
+    margin-right:10px;
+    font-size:1.2em;
+}
+
+#TitleImg {
+    width:100px;
+    height:100px;
+    margin-right:15px;
+}
+
+#LoginID {
+    margin-left:15px;
+}
+
+.MainSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.LeftMenu {
+    margin-top:20px;
+    margin-right:15px;
+
+    width:280px;
+    height:735px;
+    background-color:rgba(116, 72, 14, 0.8);
+    
+    flex-basis: 15%;
+
+    border-radius: 20px 20px;
+    color:rgb(255,255,255);
+    font-size :1.6em;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.NavbarMenuItem {
+    width:180px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.NavbarMenuItem a {
+    color:rgb(236, 236, 236);
+    text-decoration: none;
+}
+
+.CenterCont {
+    margin-top:20px;
+    flex-basis: 60%;
+    height:735px;
+    margin-right:10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.SubjectCont {
+    flex-basis: 35%;
+    background-color:rgba(216, 147, 18, 0.7);
+    border-radius: 20px 20px;
+    padding-left: 30px;
+}
+
+.SubjectImage {
+    width:55px;
+    height:55px;
+}
+
+.Due {
+    margin-top:15px;
+    color:rgb(129, 56, 56);
+}
+
+.DuePeriod {
+    font-size: 1.4em;
+}
+
+.EventCont {
+    margin-top:10px;
+    flex-basis: 65%;
+    border-radius: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.StdEventCont {
+    flex-basis: 45%;
+    background-color:rgba(22, 96, 119, 0.8);
+    margin-right:10px;
+    border-radius: 20px 20px;
+}
+
+.StdTitle {
+    margin-top:15px;
+    text-align: center;
+}
+
+.StdEvtUnOrd {
+    padding-left: 40px;
+}
+
+.StdEvtList {
+    margin-top:15px;
+    font-size: 1.3em;
+    list-style-type: circle;
+}
+
+.PhotoCont {
+    flex-basis: 55%;
+    background-color:rgb(196, 196, 196);
+    border-radius: 20px 20px;
+}
+
+.RightCont {
+    margin-top:20px;
+    flex-basis: 25%;
+    height:735px;
+    display:flex;
+    flex-direction: column;
+}
+
+.WeatherInfo {
+    flex-basis: 35%;
+    background-color:burlywood;
+    border-radius: 20px 20px;
+    padding:15px;
+}
+
+.Greet {
+    font-size:2.7em;
+    color:rgb(255,255,255);
+}
+
+.GreetSub {
+    margin-top:10px;
+    font-size:1.4em;
+}
+
+.TodoList {
+    flex-basis: 65%;
+    margin-top:10px;
+    background-color:rgb(143, 101, 10);
+    border-radius: 20px 20px;
+}
+
+.slide {
+    height: 400px;
+    background-size: cover;
+    border-radius: 10px;
+    animation: fade 1.5s;
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    padding: 10px;
+    color: rgb(248, 248, 248);
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 5px;
+}
+.next {
+    right: 28%;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(190, 190, 190, 0.5);
+}
+
+.photoListTitle {
+    margin-top:10px;
+    text-align:center;
+    font-size:2.2em;
+    color:rgba(59, 142, 190, 0);
+}
+
+.DayWeather {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+.DayMark {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.TimeMark {
+    flex-basis: 70%;
+    display:flex;
+    flex-direction: row;
+}
+
+.TimeMarkCont {
+    text-align: center;
+}
+
+.TimeZone {
+    flex-basis: 20%;
+}
+
+.TimeZoneImage {
+    flex-basis: 60%;
+    width:70px;
+    height:70px;
+    margin-top:8px;
+}
+
+.TimeTempt {
+    flex-basis: 20%;
+    color:rgb(255,0,0);
+}
+
+.Sun {
+    width:85px;
+    height:85px;
+    margin-bottom:13px;
+}
+
+.DayMark p {
+    color:rgb(255,0,0);
+}
+
+.TodoList {
+    overflow: hidden;
+}
+
+.ToDoTitle {
+    text-align:center;
+    margin-top:15px;
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+}
+
+th { 
+    background: #9fd6c2; 
+}
+
+td { 
+    color: #fff; 
+}
+
+tbody td:first-child { 
+    text-align: center; 
+}
+
+.BtnArea { 
+    text-align: center; 
+}
+
+.BtnArea button { 
+    height: 35px; 
+    padding: 0 10px; 
+    border: none; 
+    font-size: 1em;
+}
+
+.WriteBox { 
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding:10px;
+}
+
+.WriteBox input { 
+    width: 250px;
+    height:35px;
+    font-size: 1.6em;
+    border: none; 
+    padding: 0 10px; 
+    border-radius: 10px;
+    outline: none;
+}
+
+.WriteBox button { 
+    width: 100px; 
+    border: none; 
+    height: 100%; 
+    font-size:1em;
+    border-radius: 10px;
+}
+
+table {
+    margin-bottom: 10px;
+}
+
+@keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+}
